@@ -1,0 +1,5 @@
+category: MATE
+requires: libatk1.0_0 libcairo2 libcanberra0 libcanberra-gtk0 libgdk_pixbuf2.0_0 libglib2.0_0 libgtk2.0_0 libgtop2.0_7 libICE6 libintl8 libmateconf2_4 libpango1.0_0 libSM6 libstartup-notification1_0 libX11_6 libXcomposite1 libXcursor1 libXdamage1 libXext6 libXfixes3 libXinerama1 libXrandr2 libXrender1 mate-conf mate-dialogs
+sdesc: "MATE window manager (aka Marco)"
+ldesc: "MATE is a fork of the GNOME 2 desktop. It provides an intuitive
+and attractive desktop to Linux users using traditional metaphors."

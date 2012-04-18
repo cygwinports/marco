@@ -1,0 +1,9 @@
+inherit mate
+
+
+PATCH_URI="1.2.0-cygwin.patch"
+
+PKG_NAMES="${PN} ${PN}-devel"
+PKG_HINTS="setup devel"
+mate_window_manager_CONTENTS="etc/ usr/bin/ usr/share/"
+mate_window_manager_devel_CONTENTS="usr/include/ usr/lib/"
