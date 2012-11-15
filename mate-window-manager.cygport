@@ -1,0 +1,18 @@
+inherit mate
+
+NAME="mate-window-manager"
+VERSION=1.4.1
+RELEASE=1
+CATEGORY="MATE"
+SUMMARY="MATE window manager (aka Marco)"
+DESCRIPTION="MATE is a fork of the GNOME 2 desktop. It provides an intuitive
+and attractive desktop to Linux users using traditional metaphors."
+REQUIRES="mate-dialogs"
+
+PATCH_URI="1.2.0-cygwin.patch"
+
+CYGCONF_ARGS="ac_cv_path_MATEDIALOG=/usr/bin/matedialog"
+
+PKG_NAMES="${PN} ${PN}-devel"
+mate_window_manager_CONTENTS="etc/ usr/bin/ usr/share/"
+mate_window_manager_devel_CONTENTS="usr/include/ usr/lib/"
