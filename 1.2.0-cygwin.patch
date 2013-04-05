@@ -1,14 +1,3 @@
---- origsrc/mate-window-manager-1.2.0/src/Makefile.am	2012-02-25 12:54:12.000000000 -0600
-+++ src/mate-window-manager-1.2.0/src/Makefile.am	2012-04-16 20:51:43.324171000 -0500
-@@ -147,7 +147,7 @@ schema_bindings_SOURCES = \
- 	marco.schemas.in.in
- 
- schema_bindings_LDADD = @MARCO_LIBS@
--marco.schemas.in: schema_bindings ${srcdir}/marco.schemas.in.in
-+marco.schemas.in: schema_bindings$(EXEEXT) ${srcdir}/marco.schemas.in.in
- 	@echo Generating keybinding schemas... ${srcdir}/marco.schemas.in.in
- 	${builddir}/schema_bindings ${srcdir}/marco.schemas.in.in ${builddir}/marco.schemas.in
- 
 --- origsrc/mate-window-manager-1.2.0/src/ui/theme.c	2012-02-25 12:54:12.000000000 -0600
 +++ src/mate-window-manager-1.2.0/src/ui/theme.c	2012-04-16 21:12:44.370298700 -0500
 @@ -61,6 +61,7 @@
