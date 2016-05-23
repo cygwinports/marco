@@ -1,0 +1,28 @@
+--- origsrc/marco-1.14.2/src/core/testasyncgetprop.c	2016-05-03 15:14:48.000000000 -0500
++++ src/marco-1.14.2/src/core/testasyncgetprop.c	2016-05-22 15:53:21.862365000 -0500
+@@ -25,6 +25,7 @@
+  * in this Software without prior written authorization from The Open Group.
+  */
+ 
++#define _DEFAULT_SOURCE
+ #include "async-getprop.h"
+ 
+ #include <time.h>
+--- origsrc/marco-1.14.2/src/ui/theme.c	2016-05-22 15:37:54.241917300 -0500
++++ src/marco-1.14.2/src/ui/theme.c	2016-05-22 15:41:11.459214400 -0500
+@@ -52,6 +52,7 @@
+  * things. This is the parser used for that language.
+  */
+ 
++#define _XOPEN_SOURCE 500
+ #include <config.h>
+ #include "theme.h"
+ #include "theme-parser.h"
+@@ -60,7 +61,6 @@
+ #include <gtk/gtk.h>
+ #include <string.h>
+ #include <stdlib.h>
+-#define __USE_XOPEN
+ #include <math.h>
+ 
+ #if GTK_CHECK_VERSION (3, 0, 0)
