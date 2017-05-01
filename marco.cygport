@@ -1,7 +1,7 @@
 inherit mate
 
 NAME="marco"
-VERSION=1.16.0
+VERSION=1.18.0
 RELEASE=1
 CATEGORY="MATE"
 SUMMARY="MATE window manager"
@@ -10,7 +10,7 @@ and attractive desktop to Linux users using traditional metaphors."
 
 PATCH_URI="1.14.2-cygwin-ftm.patch"
 
-CYGCONF_ARGS="ac_cv_path_ZENITY=/usr/bin/zenity --with-gtk=3.0"
+CYGCONF_ARGS="ac_cv_path_ZENITY=/usr/bin/zenity"
 
 PKG_NAMES="${NAME} ${NAME}-devel"
 marco_OBSOLETES="mate-window-manager"
